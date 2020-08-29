@@ -9,65 +9,424 @@
 
     <title>Welcome to Tailwind!</title>
   </head>
-  <body class="antialiased text-white">
-    <header class="font-bold text-white">
-      <nav class="bg-blue-900 flex items-center h-14 p-5">
-        <button class="absolute focus:outline-none">
-          <svg
-            class="w-8 border rounded"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            class="menu w-6 h-6"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </button>
-        <h2 class="text-2xl mx-auto select-none">Ariel Chura</h2>
-      </nav>
-    </header>
-    <main class="bg-gray-900 flex justify-center">
-      <div class="w-10/12 py-5 select-none">
-        <h1 class="font-bold text-5xl">Ariel Chura</h1>
-        <p class="text-gray-200 font-light text-2xl">Frontend Developer</p>
-        <p class="text-gray-200 font-normal mt-6">
-          Soy estudiante de Informática, programador con gustos por el diseño de interfaces web y
-          programación web. Soy estudiante de Informática
-        </p>
-        <div class="flex mt-4">
-          <button
-            class="bg-green-500 py-2 px-3 flex items-center rounded-md font-semibold mr-4 focus:outline-none"
-          >
-            <span class="inline-block mr-1">
-              <svg viewBox="0 0 20 20" fill="currentColor" class="arrow-circle-right w-6 h-6">
+  <body class="antialiased text-gray-900 bg-white">
+    <nav class="bg-naranja-200 hidden lg:w-84 h-screen fixed lg:block">
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque eligendi harum repellat fuga
+        ex quos. Eligendi perspiciatis eveniet facere numquam iure autem. Minima dolorem unde aut
+        facere nihil architecto obcaecati.
+      </p>
+    </nav>
+    <div class="lg:ml-84">
+      <header class="font-bold text-white lg:hidden">
+        <nav class="bg-azul-500 flex items-center h-14 p-5">
+          <button class="absolute focus:outline-none">
+            <svg
+              class="w-8 border rounded"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="menu w-8 h-8"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <h2 class="text-2xl mx-auto select-none">Ariel Chura</h2>
+        </nav>
+      </header>
+
+      <main class="flex justify-center text-gray-900 bg-fondo-500">
+        <div class="py-5 select-none lg:flex w-10/12 lg:w-8/12">
+          <div class="lg:flex flex-col justify-center lg:mr-2">
+            <h1 class="font-bold text-5xl">Ariel Chura</h1>
+            <p class="font-light text-2xl">Frontend Developer</p>
+            <p class="font-normal mt-4">
+              Soy estudiante de Informática, programador con gustos por el diseño de interfaces web
+              y programación web. Soy estudiante de Informática
+            </p>
+            <div class="flex mt-4 text-white">
+              <button
+                class="bg-naranja-500 text-white font-bold py-3 px-5 rounded flex items-center mr-2"
+              >
+                <span class="inline-block mr-1">
+                  <svg viewBox="0 0 20 20" fill="currentColor" class="arrow-circle-right w-6 h-6">
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </span>
+                Portfolio
+              </button>
+              <button
+                class="bg-azul-500 text-white font-bold py-3 px-5 rounded flex items-center mr-2"
+              >
+                <span class="inline-block mr-1">
+                  <svg viewBox="0 0 20 20" fill="currentColor" class="document-text w-6 h-6">
+                    <path
+                      fill-rule="evenodd"
+                      d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </span>
+                Resumen
+              </button>
+            </div>
+          </div>
+          <!-- foto -->
+          <div class="my-4 self-center">
+            <img
+              class="shadow rounded"
+              src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&h=500&q=500"
+              alt="Profile picture"
+            />
+          </div>
+        </div>
+      </main>
+      <!-- What I do -->
+
+      <section class="flex justify-center bg-white lg:pt-6">
+        <div class="w-10/12 lg:w-8/12">
+          <h2 class="text-3xl font-bold border-l-4 border-naranja-500 leading-tight pl-4 mt-4">
+            Lo que hago
+          </h2>
+          <p class="pt-4 text-gray-700">
+            I have more than 10 years' experience building software for clients all over the world.
+            Below is a quick overview of my main technical skill sets and technologies I use. Want
+            to find out more about my experience? Check out my
+          </p>
+        </div>
+      </section>
+
+      <section class="flex justify-center mt-10">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 w-10/12 lg:w-8/12">
+          <div>
+            <div class="mt-2 flex flex-wrap">
+              <img class="mr-1 mb-1 w-8 h-8" src="./assets/images/Logos/javascript.svg" alt="" />
+            </div>
+            <h3 class="font-bold">Vanilla JavasScript</h3>
+            <p class="mt-3">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, quaerat numquam
+              adipisci eius fugit corrupti alias
+            </p>
+          </div>
+          <div>
+            <div class="mt-2 flex flex-wrap">
+              <img class="mr-1 mb-1 w-8 h-8" src="./assets/images/Logos/react.svg" alt="" />
+              <img class="mr-1 mb-1 w-8 h-8" src="./assets/images/Logos/vue.svg" alt="" />
+            </div>
+            <h3 class="font-bold">React, Vue</h3>
+            <p class="mt-3">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, quaerat numquam
+              adipisci eius fugit corrupti alias
+            </p>
+          </div>
+          <div>
+            <div class="mt-2 flex flex-wrap">
+              <img class="mr-1 mb-1 w-8 h-8" src="./assets/images/Logos/php.svg" alt="" />
+            </div>
+            <h3 class="font-bold">PHP</h3>
+            <p class="mt-3">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, quaerat numquam
+              adipisci eius fugit corrupti alias
+            </p>
+          </div>
+          <div>
+            <div class="mt-2 flex flex-wrap">
+              <img class="mr-1 mb-1 w-8 h-8" src="./assets/images/Logos/postcss.svg" alt="" />
+              <img class="mr-1 mb-1 w-8 h-8" src="./assets/images/Logos/webpack.svg" alt="" />
+              <img class="mr-1 mb-1 w-8 h-8" src="./assets/images/Logos/babel.svg" alt="" />
+            </div>
+            <h3 class="font-bold">PostCss, Webpack, Babel</h3>
+            <p class="mt-3">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, quaerat numquam
+              adipisci eius fugit corrupti aliastetur adipisicing elit. Odio, quaerat numquam
+              adipisci eius fugit corrupti alias
+            </p>
+          </div>
+          <div>
+            <div class="mt-2 flex flex-wrap">
+              <img class="mr-1 mb-1 w-8 h-8" src="./assets/images/Logos/sass.svg" alt="" />
+              <img class="mr-1 mb-1 w-8 h-8" src="./assets/images/Logos/less.svg" alt="" />
+              <img class="mr-1 mb-1 w-8 h-8" src="./assets/images/Logos/stylus.svg" alt="" />
+            </div>
+            <h3 class="font-bold">Sass, Less, Stylus</h3>
+            <p class="mt-3">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, quaerat numquam
+              adipisci eius fugit corrupti alias
+            </p>
+          </div>
+          <div>
+            <div class="mt-2 flex flex-wrap">
+              <img class="mr-1 mb-1 w-8 h-8" src="./assets/images/Logos/npm.svg" alt="" />
+            </div>
+            <h3 class="font-bold">Node Package Manager</h3>
+            <p class="mt-3">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, quaerat numquam
+              adipisci eius fugit corrupti alias
+            </p>
+          </div>
+          <div>
+            <div class="mt-2 flex flex-wrap">
+              <img class="mr-1 mb-1 w-8 h-8" src="./assets/images/Logos/html-5.svg" alt="" />
+              <img class="mr-1 mb-1 w-8 h-8" src="./assets/images/Logos/css-3.svg" alt="" />
+            </div>
+            <h3 class="font-bold">Semantic HTML, Css</h3>
+            <p class="mt-3">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, quaerat numquam
+              adipisci eius fugit corrupti alias
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="flex justify-center mt-10">
+        <div class="w-10/12 lg:w-8/12">
+          <h2 class="text-3xl font-bold border-l-4 border-naranja-500 leading-tight pl-4 mt-4">
+            Proyectos destacados
+          </h2>
+
+          <div class="lg:grid grid-cols-1 lg:grid-cols-2 gap-8 my-8">
+            <div class="bg-fondo-500 shadow-md rounded-lg overflow-hidden lg:flex">
+              <img class="lg:w-5/12" src="http://lorempixel.com/400/300/" alt="" />
+              <div class="p-5">
+                <h4 class="underline font-bold text-xl lg:text-2xl">Título de Proyecto</h4>
+                <p class="mt-2 text-sm text-gray-700 lg:text-base">
+                  Project intro lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis
+                  natoque penatibus et magnis dis parturient montes.
+                </p>
+                <p class="mt-3 text-gray-500 text-xs lg:text-base">Cliente: Google</p>
+              </div>
+            </div>
+            <div class="bg-fondo-500 shadow-md rounded-lg overflow-hidden lg:flex">
+              <img class="lg:w-5/12" src="http://lorempixel.com/400/300/" alt="" />
+              <div class="p-5">
+                <h4 class="underline font-bold text-xl lg:text-2xl">Título de Proyecto</h4>
+                <p class="mt-2 text-sm text-gray-700 lg:text-base">
+                  Project intro lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis
+                  natoque penatibus et magnis dis parturient montes.
+                </p>
+                <p class="mt-3 text-gray-500 text-xs lg:text-base">Cliente: Google</p>
+              </div>
+            </div>
+            <div class="bg-fondo-500 shadow-md rounded-lg overflow-hidden lg:flex">
+              <img class="lg:w-5/12" src="http://lorempixel.com/400/300/" alt="" />
+              <div class="p-5">
+                <h4 class="underline font-bold text-xl lg:text-2xl">Título de Proyecto</h4>
+                <p class="mt-2 text-sm text-gray-700 lg:text-base">
+                  Project intro lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis
+                  natoque penatibus et magnis dis parturient montes.
+                </p>
+                <p class="mt-3 text-gray-500 text-xs lg:text-base">Cliente: Google</p>
+              </div>
+            </div>
+            <div class="bg-fondo-500 shadow-md rounded-lg overflow-hidden lg:flex">
+              <img class="lg:w-5/12" src="http://lorempixel.com/400/300/" alt="" />
+              <div class="p-5">
+                <h4 class="underline font-bold text-xl lg:text-2xl">Título de Proyecto</h4>
+                <p class="mt-2 text-sm text-gray-700 lg:text-base">
+                  Project intro lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis
+                  natoque penatibus et magnis dis parturient montes.
+                </p>
+                <p class="mt-3 text-gray-500 text-xs lg:text-base">Cliente: Google</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Guias -->
+
+      <section class="flex justify-center mt-10">
+        <div class="w-10/12 lg:w-8/12">
+          <h2 class="text-3xl font-bold border-l-4 border-naranja-500 leading-tight pl-4 mt-4">
+            Guias
+          </h2>
+
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 my-8">
+            <div class="bg-fondo-500 shadow-md rounded-lg overflow-hidden">
+              <img src="http://lorempixel.com/400/300/" alt="" />
+              <div class="p-5">
+                <h4 class="underline font-bold text-xl">Título de la Guía</h4>
+                <p class="my-4 text-sm text-gray-700">
+                  Project intro lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis
+                  natoque penatibus et magnis dis parturient montes.
+                </p>
+                <a href="/" class="text-naranja-500"
+                  >Leer más
+                  <svg
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="arrow-right w-4 h-4 inline-block"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </a>
+                <p class="mt-3 text-gray-500 text-xs">Cliente: Google</p>
+              </div>
+            </div>
+            <div class="bg-fondo-500 shadow-md rounded-lg overflow-hidden">
+              <img src="http://lorempixel.com/400/300/" alt="" />
+              <div class="p-5">
+                <h4 class="underline font-bold text-xl">Título de la Guía</h4>
+                <p class="my-4 text-sm text-gray-700">
+                  Project intro lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis
+                  natoque penatibus et magnis dis parturient montes.
+                </p>
+                <a href="/" class="text-naranja-500"
+                  >Leer más
+                  <svg
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="arrow-right w-4 h-4 inline-block"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </a>
+                <p class="mt-3 text-gray-500 text-xs">Cliente: Google</p>
+              </div>
+            </div>
+            <div class="bg-fondo-500 shadow-md rounded-lg overflow-hidden">
+              <img src="http://lorempixel.com/400/300/" alt="" />
+              <div class="p-5">
+                <h4 class="underline font-bold text-xl">Título de la Guía</h4>
+                <p class="my-4 text-sm text-gray-700">
+                  Project intro lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis
+                  natoque penatibus et magnis dis parturient montes.
+                </p>
+                <a href="/" class="text-naranja-500"
+                  >Leer más
+                  <svg
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="arrow-right w-4 h-4 inline-block"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </a>
+                <p class="mt-3 text-gray-500 text-xs">Cliente: Google</p>
+              </div>
+            </div>
+            <div class="bg-fondo-500 shadow-md rounded-lg overflow-hidden">
+              <img src="http://lorempixel.com/400/300/" alt="" />
+              <div class="p-5">
+                <h4 class="underline font-bold text-xl">Título de la Guía</h4>
+                <p class="my-4 text-sm text-gray-700">
+                  Project intro lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis
+                  natoque penatibus et magnis dis parturient montes.
+                </p>
+                <a href="/" class="text-naranja-500"
+                  >Leer más
+                  <svg
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="arrow-right w-4 h-4 inline-block"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </a>
+                <p class="mt-3 text-gray-500 text-xs">Cliente: Google</p>
+              </div>
+            </div>
+            <div class="bg-fondo-500 shadow-md rounded-lg overflow-hidden">
+              <img src="http://lorempixel.com/400/300/" alt="" />
+              <div class="p-5">
+                <h4 class="underline font-bold text-xl">Título de la Guía</h4>
+                <p class="my-4 text-sm text-gray-700">
+                  Project intro lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis
+                  natoque penatibus et magnis dis parturient montes.
+                </p>
+                <a href="/" class="text-naranja-500"
+                  >Leer más
+                  <svg
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="arrow-right w-4 h-4 inline-block"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </a>
+                <p class="mt-3 text-gray-500 text-xs">Cliente: Google</p>
+              </div>
+            </div>
+            <div class="bg-fondo-500 shadow-md rounded-lg overflow-hidden">
+              <img src="http://lorempixel.com/400/300/" alt="" />
+              <div class="p-5">
+                <h4 class="underline font-bold text-xl">Título de la Guía</h4>
+                <p class="my-4 text-sm text-gray-700">
+                  Project intro lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis
+                  natoque penatibus et magnis dis parturient montes.
+                </p>
+                <a href="/" class="text-naranja-500"
+                  >Leer más
+                  <svg
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="arrow-right w-4 h-4 inline-block"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </a>
+                <p class="mt-3 text-gray-500 text-xs">Cliente: Google</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-center h-24">
+            <button
+              class="bg-naranja-500 text-white font-bold py-3 px-5 rounded flex items-center shadow"
+            >
+              <svg
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="arrow-circle-right w-6 h-6 inline-block mr-2"
+              >
                 <path
                   fill-rule="evenodd"
                   d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
                   clip-rule="evenodd"
                 ></path>
               </svg>
-            </span>
-            Portfolio
-          </button>
-          <button
-            class="bg-gray-800 py-2 px-3 flex items-center rounded-md font-semibold focus:outline-none"
-          >
-            <span class="inline-block mr-1">
-              <svg viewBox="0 0 20 20" fill="currentColor" class="document-text w-6 h-6">
-                <path
-                  fill-rule="evenodd"
-                  d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </span>
-            Resumen
-          </button>
+              Ver blog
+            </button>
+          </div>
         </div>
-      </div>
-    </main>
+      </section>
+
+      <!-- Footer -->
+
+      <footer class="bg-azul-500 h-20 flex items-center justify-center text-white font-light">
+        <p>Ariel Chura &copy; 2020</p>
+      </footer>
+    </div>
   </body>
 </html>
